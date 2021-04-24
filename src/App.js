@@ -1,5 +1,9 @@
 import React, {useState, useRef, useEffect } from 'react'
 import TodoList from './TodoList'
+import {Greet} from './Greet'
+import Welcome from './Welcome'
+import Message from './Message'
+import Count from './Count'
 // import uuidv4 from 'src/uuid/v4'
 import {v4 as uuidv4} from 'uuid'
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
@@ -37,11 +41,16 @@ function App() {
 
   return (
     <>
-      <TodoList todos={todos} toggleTodo={toggleTodo} /> 
+      {/* <TodoList todos={todos} toggleTodo={toggleTodo} /> 
       <input ref={todoNameRef} type="text"/>
       <button onClick={handleAddTodo}>Add Todo</button>
       <button onClick={handleClearTodos}>Clear Completed Todo</button>
-      <div>{todos.filter(todo => !todo.complete).length} left todo</div>
+      <div>{todos.filter(todo => !todo.complete).length} left todo</div> */}
+      <br></br>
+      {/* <Greet name="Sam puth" lang="React.js"/>
+      <Welcome lang="JavaScript React" /> */}
+      {/* <Message /> */}
+      <Count count = "19" />
     </>
   );
 }
